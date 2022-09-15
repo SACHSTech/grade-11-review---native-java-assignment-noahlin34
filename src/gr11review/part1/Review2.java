@@ -14,7 +14,7 @@ public class Review2{
         System.out.println("2 - print a joke about your clothes");
         System.out.println("3 - print a joke about your teacher");
 
-        System.out.print("Chose a menu option: ");
+        System.out.print("Choose a menu option: ");
 
         int  userselection = Integer.parseInt(keyboard.readLine());
 
