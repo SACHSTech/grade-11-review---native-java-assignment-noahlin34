@@ -24,7 +24,7 @@ public class Review1{
             intDays = 1;
         } else {
             if(intMonth == 2) {
-                intDay = 32;
+                intDays = 32;
             } else {
                 if (intMonth == 3) {
                     intDays = 60;
@@ -71,7 +71,7 @@ public class Review1{
         
 
         if(intMonth != 0) {
-            intDay--;
+            intDays--;
         }
 
         intDays = intDays + intDay;
