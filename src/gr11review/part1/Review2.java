@@ -24,16 +24,16 @@ public class Review2{
 
         } else {
             if(userselection == 1) {
-            System.out.println("Why do bees have sticky hair?");
-            System.out.println("They always use honeycombs.");
+            System.out.println("What does a thief wear on their feet?");
+            System.out.println("Sneakers.");
             } else {
                 if(userselection == 2) {
-                    System.out.println("Why do bees have sticky hair?");
-                    System.out.println("They always use honeycombs.");
+                    System.out.println("I stopped ironing my clothes.");
+                    System.out.println("I have less pressing concerns.");
                 } else {
                     if(userselection == 3) {
-                        System.out.println("Why do bees have sticky hair?");
-                        System.out.println("They always use honeycombs.");
+                        System.out.println("Why was the comp sci teacher angry when the student cracked a lame computer joke?");
+                        System.out.println("He did not like it one bit!");
                     } else {
                         System.out.print("Invalid menu option");
                     }
