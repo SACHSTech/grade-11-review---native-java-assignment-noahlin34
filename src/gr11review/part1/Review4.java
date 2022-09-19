@@ -17,24 +17,24 @@ public class Review4{
 
         int intNumItems = Integer.parseInt(keyboard.readLine());
 
-        double floatPrice1 = 0;
-        double floatPrice2 =0;
-        double floatPrice3 = 0;
-        double floatPrice4 = 0;
+        double doublePrice1 = 0;
+        double doublePrice2 =0;
+        double doublePrice3 = 0;
+        double doublePrice4 = 0;
 
         for(int x = 1; x<intNumItems +1; x++) {
             System.out.print("Enter the price for item " + x + ": ");
             if(x == 1) {
-                 floatPrice1 = Float.parseFloat(keyboard.readLine());
+                 doublePrice1 = Float.parseFloat(keyboard.readLine());
             } else {
                 if(x == 2) {
-                    floatPrice2 = Float.parseFloat(keyboard.readLine());
+                    doublePrice2 = Float.parseFloat(keyboard.readLine());
                 }else {
                     if(x == 3) {
-                       floatPrice3 = Float.parseFloat(keyboard.readLine());
+                       doublePrice3 = Float.parseFloat(keyboard.readLine());
                     } else {
                         if(x==4) {
-                            floatPrice4 = Float.parseFloat(keyboard.readLine());
+                            doublePrice4 = Float.parseFloat(keyboard.readLine());
 
                         }
                     }
@@ -45,14 +45,14 @@ public class Review4{
 
 
 
-        double intSubtotal = floatPrice1 + floatPrice2 + floatPrice3 + floatPrice4;
+        double doubleSubtotal = doublePrice1 + doublePrice2 + doublePrice3 + doublePrice4;
 
-        double floattax = intSubtotal * 0.13;
+        double doubleTax = doubleSubtotal * 0.13;
 
-        double doubletotal = intSubtotal * 1.13;
+        double doubletotal = doubleSubtotal * 1.13;
 
-        System.out.println("Subtotal: " + myFormat.format(intSubtotal));
-        System.out.println("Tax: " + myFormat.format(floattax));
+        System.out.println("Subtotal: " + myFormat.format(doubleSubtotal));
+        System.out.println("Tax: " + myFormat.format(doubleTax));
         System.out.println("Total: " + myFormat.format(doubletotal));
 
 
