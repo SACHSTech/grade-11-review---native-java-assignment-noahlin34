@@ -12,12 +12,15 @@ public class Review8 {
         int int3;
         int intTripleCounter =0;
 
+
+        //generates random numbers 
         for(int x = 0; x < 1000; x++) {
 
             int1 = random.nextInt(9);
             int2 = random.nextInt(9);
             int3 = random.nextInt(9);
 
+            //counts how many times all 3 digits are equal 
             if(int1 == int2 && int1 == int3) {
                 intTripleCounter++;
             }
@@ -25,6 +28,7 @@ public class Review8 {
             System.out.println(int1 + " " + int2 + " " +  int3);
         }
 
+        
         System.out.println(intTripleCounter);
 
     }

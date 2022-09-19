@@ -6,10 +6,11 @@ public class Review5{
     public static void main (String[] args ) throws IOException{
      
         
+        
 
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
-
+        //gets the values
         System.out.print("Enter the yearly invested amount: ");
 
         double yearly = Double.parseDouble(keyboard.readLine());
@@ -26,6 +27,7 @@ public class Review5{
 
         int years = 0;
 
+        //loops the amounts until the target value is reached
         while(currentamount < target){
 
             if(rate == 0) {

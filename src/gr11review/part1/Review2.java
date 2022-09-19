@@ -9,6 +9,8 @@ public class Review2{
 
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
+        //prints the initial menu 
+
         System.out.println("0 - print a joke about your hair");
         System.out.println("1 - print a joke about your feet");
         System.out.println("2 - print a joke about your clothes");
@@ -18,13 +20,15 @@ public class Review2{
 
         int  userselection = Integer.parseInt(keyboard.readLine());
 
+
+        //nested if statements to print the proper jokes on selection 
         if(userselection == 0) {
             System.out.println("Why do bees have sticky hair?");
             System.out.println("They always use honeycombs.");
 
         } else {
             if(userselection == 1) {
-            System.out.println("What does a thief wear on their feet?");
+            System.out.println("What does a thief wear on their feet?"); 
             System.out.println("Sneakers.");
             } else {
                 if(userselection == 2) {

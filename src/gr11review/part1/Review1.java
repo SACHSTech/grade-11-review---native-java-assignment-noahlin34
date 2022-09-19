@@ -13,12 +13,13 @@ public class Review1{
 
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
-
         System.out.print("Enter the month number: ");
         intMonth = Integer.parseInt(keyboard.readLine());
 
         System.out.print("Enter the day number: ");
         intDay = Integer.parseInt(keyboard.readLine());
+
+        //nested if statements to assign the correct day values for the firsts of the months. 
         
         if(intMonth == 1) {
             intDays = 1;
@@ -70,10 +71,12 @@ public class Review1{
         }
         
 
+        //unless the month is zero, the number of days is decreased by one
         if(intMonth != 0) {
             intDays--;
         }
 
+        //adds the total 
         intDays = intDays + intDay;
 
         System.out.println(intDays);

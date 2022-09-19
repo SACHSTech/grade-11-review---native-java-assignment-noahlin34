@@ -14,10 +14,12 @@ public class Review7{
         String stringInput = keyboard.readLine();
         
 
+        //calculates the length of the string 
         System.out.println("There are " + stringInput.length() + " characters in the sentence.");
 
         int intSpaceCount = 0;
 
+        //counts the number of spaces
         for(int x = 0; x < stringInput.length(); x++) {
             if(stringInput.charAt(x) == ' ') {
                 intSpaceCount++;
@@ -28,6 +30,7 @@ public class Review7{
 
         int intCharACount = 0;
 
+        //counts the number of a characters
         for(int y = 0; y < stringInput.length(); y++) {
             if(stringInput.charAt(y) == 'a') {
                 intCharACount++;
@@ -36,9 +39,11 @@ public class Review7{
 
         System.out.println("There are " + intCharACount + " letter a in the sentence.");
 
+    
         int intOddCount = 0;
         String stringOdd = "";
 
+        //computes the odd characters and prints the appropriate number of dashes 
         for(int b = 1; b < stringInput.length() + 1; b++) {
             if(b % 2 != 0) {
                 stringOdd = stringOdd + "-";

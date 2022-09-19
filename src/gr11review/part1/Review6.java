@@ -9,6 +9,8 @@ public class Review6{
 
        BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
+
+       //sets up the decimal formatting
         DecimalFormat myFormat = new DecimalFormat("$0.00");
 
         double inputValue = 0;
@@ -20,7 +22,7 @@ public class Review6{
 
         runningPrice = runningPrice + inputValue;
 
-
+        //keeps looping until the value entered is 0
 
         while (inputValue > 0) {
 
@@ -29,6 +31,8 @@ public class Review6{
             inputValue = Double.parseDouble((keyboard.readLine()));
             runningPrice = runningPrice + inputValue;
         } 
+
+        //calculates and prints the final amounts 
 
         System.out.println("Subtotal: " + myFormat.format(runningPrice));
         System.out.println("Tax: " + myFormat.format(runningPrice * 0.13));

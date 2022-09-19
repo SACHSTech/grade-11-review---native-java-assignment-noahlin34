@@ -9,6 +9,7 @@ import java.util.Currency;
 public class Review4{
     public static void main(String[] args) throws IOException {
 
+        //setups up the decimal formatting
         DecimalFormat myFormat = new DecimalFormat("$0.00");
 
         BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
@@ -17,11 +18,13 @@ public class Review4{
 
         int intNumItems = Integer.parseInt(keyboard.readLine());
 
+        //initial values for the prices (only 4 placeholder values are initialized)
         double doublePrice1 = 0;
         double doublePrice2 =0;
         double doublePrice3 = 0;
         double doublePrice4 = 0;
 
+        //runs the loop as long as the number of items entered
         for(int x = 1; x<intNumItems +1; x++) {
             System.out.print("Enter the price for item " + x + ": ");
             if(x == 1) {
@@ -44,6 +47,7 @@ public class Review4{
 
 
 
+        //calculates the various totals 
 
         double doubleSubtotal = doublePrice1 + doublePrice2 + doublePrice3 + doublePrice4;
 
@@ -55,7 +59,7 @@ public class Review4{
         System.out.println("Tax: " + myFormat.format(doubleTax));
         System.out.println("Total: " + myFormat.format(doubletotal));
 
-
+        
 
     }
 }
